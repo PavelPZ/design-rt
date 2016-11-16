@@ -1,0 +1,49 @@
+{
+  "name": "langmaster-toolbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --verbose --colors --display-error-details --config webpack.config",
+    "build:dev": "cross-env NODE_ENV=development webpack --verbose --colors --display-error-details --config webpack.config",
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server -d --config webpack.config"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.39",
+    "@types/react": "^0.14.48",
+    "@types/react-dom": "^0.14.18",
+    "html-webpack-plugin": "^2.22.0",
+    "immutability-helper": "^2.0.0",
+    "lodash": "^4.16.4",
+    "normalize.css": "^4.2.0",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-toolbox": "^1.2.1",
+    "typescript": "^2.0.3",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "clean-webpack-plugin": "^0.1.11",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^0.13.0",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "sass-loader": "^4.0.2",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "toolbox-loader": "0.0.3",
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
