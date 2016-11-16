@@ -1,4 +1,4 @@
-﻿{
+{
   "animations/slide-left": {
     "enter": "rt-animations-slide-left-enter",
     "leave": "rt-animations-slide-left-leave",
@@ -97,7 +97,6 @@
     "deleteIcon": "rt-chip-theme-deleteIcon",
     "deleteX": "rt-chip-theme-deleteX"
   },
-  "": { },
   "date_picker/theme": {
     "input": "rt-date_picker-theme-input",
     "disabled": "rt-date_picker-theme-disabled",

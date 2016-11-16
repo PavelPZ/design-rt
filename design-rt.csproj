@@ -22,18 +22,22 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="config.js" />
     <Content Include="dist\build\app.js" />
     <Content Include="dist\build\toolbox.css" />
     <Content Include="dist\index.html" />
     <Content Include="index.html" />
     <Content Include="src\index.html" />
     <Content Include="web.config" />
+    <Content Include="webpack.config.js" />
     <Content Include="webpack\dev.server.js" />
     <Content Include="webpack\development.config.js" />
     <Content Include="webpack\production.config.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="class-map.json" />
+    <Content Include="yarn.lock" />
     <TypeScriptCompile Include="index.tsx" />
     <TypeScriptCompile Include="src\Application.tsx" />
     <TypeScriptCompile Include="src\component\Example.tsx" />
@@ -46,6 +50,7 @@
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="src\styles.scss" />
+    <Content Include="README.md" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
