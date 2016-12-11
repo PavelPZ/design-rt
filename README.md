@@ -30,6 +30,6 @@ replace "node_modules-react-toolbox-lib-" by "rt-" in both class-map.json and di
 # modify RT sources:
 - all JS files from D:\rw\design-rt\node_modules\react-toolbox\lib\ to d:\rw\design\rt\react-toolbox\
 - find JS files with *.scss'* string
-- in vs.net: replace *.scss'* by *.js'*
+- in vs.net: replace *.scss'* by *.json'*
 - in *d:\rw\design\rt* dir run *node node-cmd.js --harmony* command: *theme.js* will be added
 - copy *d:\rw\design\rt\lib\* to e.g. *d:\rw\rw-app\jspm_packages\npm\react-toolbox@1.2.5\lib\*
