@@ -7,10 +7,13 @@
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
-    "jsx": "react"
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es6"
+    ]
   },
-  "include": [
-    "./index.ts",
-    "./src/**/*"
+  "exclude": [
+    "node_modules/"
   ]
 }

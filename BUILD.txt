@@ -1,0 +1,4 @@
+﻿npm update
+npm run build
+
+rem vysledek je v D:\rw\design-rt\dist\build\toolbox.css

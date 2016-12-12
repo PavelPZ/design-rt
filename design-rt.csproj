@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>2.0</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="BUILD.txt" />
     <Content Include="config.js" />
     <Content Include="dist\build\app.js" />
     <Content Include="dist\build\toolbox.css" />
@@ -36,12 +37,11 @@
     <Content Include="webpack\production.config.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="class-map-new.json" />
     <None Include="class-map.json" />
     <Content Include="yarn.lock" />
     <TypeScriptCompile Include="index.tsx" />
-    <TypeScriptCompile Include="src\Application.tsx" />
-    <TypeScriptCompile Include="src\component\Example.tsx" />
-    <TypeScriptCompile Include="src\screen\HomeScreen.tsx" />
+    <TypeScriptCompile Include="src\App.tsx" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\react\react-dom.d.ts" />
     <TypeScriptCompile Include="typings\react\react.d.ts" />
