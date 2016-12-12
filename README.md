@@ -33,7 +33,7 @@ Start and End module ID put to index.tsx (const startWebPackIdx = 150; const end
 6. replace "node_modules-react-toolbox-lib-" by "rt-" in dist/build/toolbox.css
 =================
 
-Naledujic modifikace JS neni potreba, protoze se pouzivaji RAW ReactToolbox komponenty z d:\rw\rw\typings\react-toolbox\index.d.ts, tj napr.
+Naledujic modifikace JS neni potreba, protoze se pouzivaji RAW ReactToolbox komponenty z d:\rw\rw\typings\react-toolbox\index.d.ts, tj napr. 
   react-toolbox/lib/button/Button
 misto
   react-toolbox/lib/button/index
@@ -44,4 +44,7 @@ misto
 - in vs.net: replace *.scss'* by *.json'*
 - in *d:\rw\design\rt* dir run *node node-cmd.js --harmony* command: *theme.js* will be added
 - copy *d:\rw\design\rt\lib\* to e.g. *d:\rw\rw-app\jspm_packages\npm\react-toolbox@1.2.5\lib\*
+<<<<<<< HEAD
 */
+=======
+>>>>>>> origin/master
