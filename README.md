@@ -26,7 +26,7 @@ Start and End module ID put to index.tsx (const startWebPackIdx = 150; const end
 
 3. npm run build again
 
-4. run d:\rw\design-rt\dist\index.html in Chrome debugger, copy *json* var value to d:\rw\design-rt\class-map-new.json
+4. run d:\rw\design-rt\dist\index.html in Chrome debugger, use *json* var value in d:\rw\rw\rw-gui-rt\theme.ts
 
 5. modify dist/build/toolbox.css by https://autoprefixer.github.io/
 
