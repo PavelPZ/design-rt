@@ -38,7 +38,7 @@
     "primary": "rt-button-theme-primary",
     "accent": "rt-button-theme-accent"
   },
-  "RTCard": {
+  "RTCardAll": {
     "card": "rt-card-theme-card",
     "raised": "rt-card-theme-raised",
     "cardMedia": "rt-card-theme-cardMedia",
@@ -145,7 +145,7 @@
     "errored": "rt-input-theme-errored",
     "hidden": "rt-input-theme-hidden"
   },
-  "RTLayout": {
+  "RTLayoutAll": {
     "layout": "rt-layout-theme-layout",
     "navDrawer": "rt-layout-theme-navDrawer",
     "scrim": "rt-layout-theme-scrim",
@@ -189,7 +189,7 @@
     "link": "rt-link-theme-link",
     "active": "rt-link-theme-active"
   },
-  "RTList": {
+  "RTListAll": {
     "list": "rt-list-theme-list",
     "subheader": "rt-list-theme-subheader",
     "divider": "rt-list-theme-divider",
@@ -209,7 +209,7 @@
     "itemText": "rt-list-theme-itemText",
     "primary": "rt-list-theme-primary"
   },
-  "RTMenu": {
+  "RTMenuAll": {
     "iconMenu": "rt-menu-theme-iconMenu",
     "icon": "rt-menu-theme-icon",
     "menu": "rt-menu-theme-menu",
@@ -312,7 +312,7 @@
     "selected": "rt-table-theme-selected",
     "editable": "rt-table-theme-editable"
   },
-  "RTTabs": {
+  "RTTabsAll": {
     "tabs": "rt-tabs-theme-tabs",
     "navigation": "rt-tabs-theme-navigation",
     "navigationContainer": "rt-tabs-theme-navigationContainer",
@@ -365,5 +365,27 @@
     "tooltipLeft": "rt-tooltip-theme-tooltipLeft",
     "tooltipRight": "rt-tooltip-theme-tooltipRight",
     "tooltipInner": "rt-tooltip-theme-tooltipInner"
-  }
+  },
+  "BrowseButton": null,
+  "IconButton": null,
+  "CardActions": null,
+  "CardTitle": null,
+  "CardMedia": null,
+  "CardText": null,
+  "NavDrawer": null,
+  "Panel": null,
+  "Sidebar": null,
+  "ListCheckbox": null,
+  "ListItem": null,
+  "ListDivider": null,
+  "ListSubHeader": null,
+  "MenuDivider": null,
+  "MenuItem": null,
+  "IconMenu": null,
+  "Tab": null,
+  "Card": null,
+  "Layout": null,
+  "List": null,
+  "Menu": null,
+  "Tabs": null
 }

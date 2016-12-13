@@ -37,6 +37,40 @@ import "react-toolbox/lib/tooltip/index";
 
 const startWebPackIdx = 159; const endWebPackIdx = 190;
 
+const commonClasses: { [id: string]: boolean; } = {
+  'Card':true,
+  'Layout': true,
+  'List': true,
+  'Menu': true,
+  'Tabs': true,
+};
+
+const nullClasses: { [id: string]: string; } = {
+  BrowseButton: 'Button',
+  IconButton: 'Button',
+  CardActions: 'CardAll',
+  CardTitle: 'CardAll',
+  CardMedia: 'CardAll',
+  CardText: 'CardAll',
+  NavDrawer: 'LayoutAll',
+  Panel: 'LayoutAll',
+  Sidebar: 'LayoutAll',
+  ListCheckbox: 'ListAll',
+  ListItem: 'ListAll',
+  ListDivider: 'ListAll',
+  ListSubHeader: 'ListAll',
+  MenuDivider: 'MenuAll',
+  MenuItem: 'MenuAll',
+  IconMenu: 'MenuAll',
+  Tab: 'TabsAll',
+
+  Card: 'CardAll',
+  Layout: 'LayoutAll',
+  List: 'ListAll',
+  Menu: 'MenuAll',
+  Tabs: 'TabsAll',
+};
+
 declare var __webpack_require__: (id: number) => {};
 const basicPath = 'node_modules-react-toolbox-lib-';
 var res: { [id: string]: {} } = {};
@@ -64,12 +98,18 @@ for (let i = startWebPackIdx; i <= endWebPackIdx; i++) {
     const id = path.substr(0, path.length - 6);
     const parts = id.split('_');
     for (let i = 0; i < parts.length; i++) parts[i] = firstUpper(parts[i]);
-    resNew['RT' + parts.join('')] = x;
+    let partJoin = parts.join('');
+    resNew['RT' + partJoin + (commonClasses[partJoin] ? 'All' : '')] = x;
   }
 }
-let json = JSON.stringify(res); //d:\rw\design-rt\class-map.json
+//d:\rw\design-rt\class-map.json
+let json = JSON.stringify(res); 
 debugger;
-json = JSON.stringify(resNew); //d:\rw\design-rt\class-map-new.json
+for (let p in nullClasses) resNew[p] = null;
+let code: Array<String> = ['\r\n'];
+for (let p in nullClasses) code.push(`theme.RT${p} = theme.RT${nullClasses[p]};`);
+//d:\rw\design-rt\class-map-new.json
+json = JSON.stringify(resNew) + code.join('\r\n'); 
 debugger;
 
 //ReactDOM.render(<h1>Hallo World</h1>, document.createElement('content'));
